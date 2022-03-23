@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_navigation_shop/models/Item.dart';
 
@@ -49,9 +50,9 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Image(
+                        child: Image( 
                           image: AssetImage(item.image),
-                        ),
+                        ), 
                       ),
                       Expanded(
                         child: Text(item.name),
@@ -64,6 +65,7 @@ class _HomePageState extends State<HomePage> {
                         child: Text(item.weight.toString(),
                             textAlign: TextAlign.end),
                       ),
+                      SizedBox()
                     ],
                   ),
                 ),
