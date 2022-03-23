@@ -1,6 +1,7 @@
 class Item {
-  String name;
-  int price;
+  final String name;
+  final int? weight;
+  final int? price;
 
-  Item({required this.name, required this.price});
+  Item({required this.name, required this.price, required this.weight});
 }
